@@ -48,7 +48,7 @@ void loop() {
     digitalWrite(redLed, HIGH);
     digitalWrite(greenLed, LOW);
 
-    // run the pump for 1s if it hasn't been run in 60s
+    // run the pump for 2s if it hasn't been run in 60s
     if (currentMillis - previousMillis >= millisInterval) {
       previousMillis = currentMillis;
       Serial.println("Pump turning on!");
